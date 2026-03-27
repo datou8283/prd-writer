@@ -1,6 +1,8 @@
 ---
 name: write-prd
 description: Draft or edit Product Requirements Documents for Aster Exchange features. Covers document structure, user flows, flowchart generation, scope discipline, and the full competitor-analysis-to-tracking-spec workflow.
+user-invocable: true
+argument-hint: "[feature name]"
 ---
 
 # Skill: Write PRD

@@ -1,6 +1,8 @@
 ---
 name: design-api
 description: Design API endpoints for Aster Exchange following the standard envelope pattern, error code domains, and naming conventions. Use when designing APIs in a PRD or reviewing endpoint specifications.
+user-invocable: true
+argument-hint: "[endpoint or feature name]"
 ---
 
 # Skill: Design Aster API

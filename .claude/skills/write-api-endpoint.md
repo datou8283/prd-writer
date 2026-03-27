@@ -1,6 +1,8 @@
 ---
 name: write-api-endpoint
 description: Implement or modify API endpoint code in TypeScript for the Aster Exchange backend. Covers handler patterns, zod validation, service layer conventions, error handling, and the implementation checklist.
+user-invocable: true
+argument-hint: "[endpoint name]"
 ---
 
 # Skill: Implement Aster API Endpoint

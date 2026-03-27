@@ -1,6 +1,8 @@
 ---
 name: crypto-exchange-competitor-analysis
 description: Research how competing crypto exchanges implement a feature before writing a PRD. Produces a standalone competitor analysis report covering Binance, OKX, Hyperliquid, and relevant Tier 2 exchanges.
+user-invocable: true
+argument-hint: "[feature name]"
 ---
 
 # Skill: Crypto Exchange Competitor Analysis
