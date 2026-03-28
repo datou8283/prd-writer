@@ -1,6 +1,6 @@
 ---
 name: write-posthog-events
-description: Define PostHog analytics event tracking specs for Aster Exchange web and mobile products. Use when the user asks to create, review, or update event tracking plans, analytics specs, or data instrumentation — typically after a PRD is written.
+description: Define PostHog analytics event tracking specs for web and mobile products. Use when the user asks to create, review, or update event tracking plans, analytics specs, or data instrumentation — typically after a PRD is written.
 user-invocable: true
 argument-hint: "[feature name]"
 ---
@@ -108,7 +108,7 @@ Don't track every micro-interaction. Focus on events that answer:
 - How are they using it? (which options, configurations)
 - Is it working? (success/failure rates)
 
-## Aster domain context
+## Domain context
 
 Key products and their prefixes:
 - **Perpetual futures** → `perpetual_`

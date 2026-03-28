@@ -1,4 +1,4 @@
-# Aster Exchange
+# PRD Writer
 
 Cryptocurrency trading platform — perpetual futures, spot, Shield, staking, prediction markets.
 TypeScript monorepo: Node backend, React Native mobile (iOS + Android), Next.js admin dashboard.
@@ -32,7 +32,7 @@ TypeScript monorepo: Node backend, React Native mobile (iOS + Android), Next.js 
 ## Domain terms
 
 - **Perpetual** — perpetual futures contract (use full word in code, not "perp")
-- **Shield** — Aster's principal-protected product
+- **Shield** — principal-protected product
 - **veASTER** — vote-escrowed ASTER token for staking governance
 - **BBO** — Best Bid/Offer order modifier; single `pegPrice` enum (modeled after Binance Futures `priceMatch`), not a separate endpoint
 - **Chase Order** — maker-targeting order: Buy → Best Bid, Sell → Best Ask (not reversed)

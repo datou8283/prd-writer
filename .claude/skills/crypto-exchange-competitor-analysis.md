@@ -14,7 +14,7 @@ Use this when researching how competing exchanges implement a feature before wri
 ### Tier 1 — always analyze
 - **Binance** (CEX) — market leader, de facto standard for order types and API conventions
 - **OKX** (CEX) — strong derivatives, aggressive feature shipping
-- **Hyperliquid** (DEX) — on-chain perps, closest DEX competitor to Aster
+- **Hyperliquid** (DEX) — on-chain perps, closest DEX competitor
 
 ### Tier 2 — analyze when relevant
 - **EdgeX** (DEX) — decentralized derivatives, relevant for perps and margin features
@@ -52,7 +52,7 @@ Always cite sources. If something is inferred rather than verified, mark it clea
 ## Report structure
 
 ### 1. Executive summary
-2-3 sentences: what was analyzed, key takeaway, primary recommendation for Aster.
+2-3 sentences: what was analyzed, key takeaway, primary recommendation for our product.
 
 ### 2. Feature comparison matrix
 
@@ -74,9 +74,9 @@ One section per analyzed competitor. Include:
 - Screenshots or flow descriptions where helpful
 
 ### 4. Gap analysis
-What do competitors offer that Aster doesn't? What does Aster offer that competitors don't? Where is the market converging?
+What do competitors offer that we don't? What do we offer that competitors don't? Where is the market converging?
 
-### 5. Recommendations for Aster
+### 5. Recommendations for our product
 Concrete, actionable input for the PRD:
 - Which competitor's approach to follow (and why)
 - Which to deliberately diverge from (and why)

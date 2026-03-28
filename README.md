@@ -1,6 +1,6 @@
 # PRD Writer
 
-Aster Exchange 的 Claude Code skills — 讓 Claude 幫你寫競品分析、PRD、API 設計、埋點規劃。
+Claude Code skills — 讓 Claude 幫你寫競品分析、PRD、API 設計、埋點規劃。
 
 ## 這是什麼
 
