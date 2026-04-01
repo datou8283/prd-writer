@@ -41,13 +41,14 @@ TypeScript monorepo: Node backend, React Native mobile (iOS + Android), Next.js 
 
 ## Skills
 
+- `.claude/skills/feature-workflow.md` — end-to-end PRD workflow orchestrator (competitor analysis → scope → PRD → tracking spec)
 - `.claude/skills/crypto-exchange-competitor-analysis.md` — competitor research workflow, run before writing PRDs
 - `.claude/skills/write-prd.md` — PRD document structure, format, writing style, scope discipline
 - `.claude/skills/design-api.md` — API design principles, envelope pattern, error codes, field tables (shared by PRD and code)
 - `.claude/skills/write-api-endpoint.md` — TypeScript endpoint implementation patterns
 - `.claude/skills/write-posthog-events.md` — PostHog analytics event tracking spec, run after PRD is finalized
 
-Feature workflow: competitor analysis → clarify scope → validate architecture → draft PRD → deliver `.docx` → write tracking spec.
+Feature workflow: run `/feature-workflow [feature name]` for the full pipeline, or invoke individual skills manually.
 
 ## Testing
 
