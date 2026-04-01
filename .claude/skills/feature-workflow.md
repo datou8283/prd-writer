@@ -74,13 +74,25 @@ The write-prd skill already uses `/design-api` conventions for Section 7 (API Sp
 
 ---
 
+## Phase 2.5 — Multi-Role Review
+
+After the PRD is drafted and the `.docx` is generated, automatically invoke `/prd-review {feature name}`.
+
+This runs four role-based reviews (Product Lead, Engineering Lead, Design Lead, QA Lead) against the PRD content and produces a consolidated findings summary grouped by severity.
+
+Present the consolidated review to the user as part of Checkpoint 2 below.
+
+---
+
 ## ⏸ Checkpoint 2 — PRD Review
 
 **STOP. Do not proceed until the user approves.**
 
-Present the PRD structure: list each section heading with a one-line summary of what it covers.
+Present two things:
+1. The PRD structure: list each section heading with a one-line summary of what it covers.
+2. The multi-role review findings from Phase 2.5.
 
-Ask: "Review the PRD. Which sections need changes? Or approve to proceed to tracking spec."
+Ask: "Review the PRD alongside the multi-role feedback above. Which findings do you want to address? Or approve to proceed to tracking spec."
 
 If the user requests changes:
 - Make targeted section edits (do not rewrite the entire document)
