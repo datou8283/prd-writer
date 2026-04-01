@@ -29,6 +29,15 @@ type: user
 - Diagrams: Pillow (not Mermaid, not draw.io)
 - Git: conventional commits, push to main after review
 
+## Release Note Style
+
+- Format: numbered list (not bullets), each line = **bold topic** + em dash + benefit + emoji
+- Hook line: energetic, user-focused (e.g., "More ways to track, trade, and level up!")
+- Tone: casual, upbeat, like talking to a friend
+- No closing CTA needed
+- Bug fixes: last item, casual ("Plus some bug fixes and little improvements")
+- Reference example: see `.claude/skills/write-release-note.md`
+
 ## Review Patterns
 
 (Accumulate here as Danny provides PRD feedback)
