@@ -62,3 +62,4 @@ Feature workflow: run `/feature-workflow [feature name]` for the full pipeline, 
 - Branch: `feat/JIRA-123-short-description` or `fix/JIRA-456-short-description`
 - Commits: conventional commits (feat:, fix:, chore:, docs:)
 - Run lint + typecheck before committing
+- **Auto-commit rule**: after creating or modifying any tracked file (skills, memory, CLAUDE.md, docs), always `git add` + `git commit` + `git push origin main` before ending the conversation. Do not ask — just do it.

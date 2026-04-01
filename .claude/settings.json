@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/dannychen/Documents/aster-docs && if [ -n \"$(git status --porcelain)\" ]; then git add -A && git commit -m \"chore: auto-commit on session end\" && git push origin main; fi"
+          }
+        ]
+      }
+    ]
+  }
+}
