@@ -31,28 +31,31 @@ Always produce both versions in a single response.
 ### Version 1: App Store / Google Play
 
 Structure:
-1. **Hook** — one opening line, user-focused excitement (e.g., "Your trading experience just leveled up!")
-2. **Bullets** — 3-6 bullet points, one line each
-3. **CTA** — one closing line (e.g., "Update now and explore what's new!")
+1. **Hook** — one opening line, energetic and user-focused (e.g., "More ways to track, trade, and level up!")
+2. **Numbered list** — 3-8 items, numbered (not bullets)
+3. No closing CTA needed — the list speaks for itself
+
+Each line format: `{number}. {Bold topic} — {benefit in plain language} {emoji}`
 
 Rules:
-- Each bullet focuses on **user benefit**, not technical implementation
-- Lead with the outcome: "Place orders that automatically chase the best price" not "Added Chase Order functionality"
+- Each line: **bold topic phrase** + em dash + user benefit in conversational tone + relevant emoji at the end
+- Lead with the outcome the user cares about, not the feature name
 - Most impactful feature first
-- Bug fixes: one line at the end — "Bug fixes and performance improvements" unless a major fix deserves its own bullet
-- Security updates: place prominently with "Enhanced security" framing
+- Bug fixes / minor improvements: last item, casual tone (e.g., "Plus some bug fixes and little improvements")
+- Security updates: place prominently with clear framing
 - Stay under 4000 characters (App Store limit)
+- Emoji selection: pick one emoji per line that matches the vibe (not random)
 
 Example:
 ```
-Your trading experience just leveled up!
+More ways to track, trade, and level up!
 
-- Place orders that automatically chase the best price — new Chase Orders keep you at the top of the book
-- Protect your principal with Shield — earn yield without downside risk
-- Track your staking rewards in real-time with the new veASTER dashboard
-- Bug fixes and performance improvements
-
-Update now and explore what's new!
+1. VIP progress made clear — see exactly what you need to reach the next level 🎯
+2. More control on the chart — add TP/SL and reverse positions right from the K-line 📈
+3. Your trading stats, all in one place — check your performance in the Portfolio page 📊
+4. Clearer order type descriptions — pick the right order with confidence 💡
+5. Total value now includes staking — see your full portfolio at a glance 💰
+6. Plus some bug fixes and little improvements 🛠️
 ```
 
 ---
@@ -84,19 +87,22 @@ See exactly what your veASTER is earning. The new real-time dashboard shows rewa
 
 ## Writing guidelines
 
-**Tone**: conversational, confident, user-first — like explaining a new feature to a friend who trades crypto.
+**Tone**: casual, upbeat, user-first — like a friend showing you what's new. Short punchy phrases, not full sentences.
 
 **Do**:
-- Use active voice: "You can now..." / "Place orders that..."
-- Use crypto terms users know: leverage, liquidation, staking, APY, orderbook
+- Use em dashes to separate topic from benefit: "VIP progress made clear — see exactly what you need"
+- Use active, direct language: "see", "check", "pick", "tap", "track"
+- Use crypto terms users know: leverage, TP/SL, K-line, staking, APY, orderbook
 - Sort features by impact — most exciting first
-- Keep sentences short and punchy
+- End each line with a relevant emoji
+- Keep it scannable — one glance should convey the update
 
 **Don't**:
 - Use passive voice: "A feature has been added..."
 - Use internal jargon: endpoint, schema, websocket, API, migration
 - List backend-only changes (unless they affect UX, e.g., faster order execution)
-- Over-explain — one sentence per feature is usually enough for App Store version
+- Over-explain — the em dash format forces brevity
+- Use generic emoji — each one should match the specific feature's vibe
 
 **Edge cases**:
 - Maintenance-only release (no new features): "We've been working behind the scenes to make Aster faster and more reliable. This update includes performance improvements and bug fixes."
