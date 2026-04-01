@@ -7,7 +7,7 @@ argument-hint: "[endpoint or feature name]"
 
 # Skill: Design API
 
-Use this when designing API endpoints (in a PRD) or implementing them (in code). This skill covers design principles and documentation format. For TypeScript implementation patterns, see `.claude/skills/write-api-endpoint.md`.
+Use this when designing API endpoints (in a PRD) or implementing them (in code). This skill covers design principles and documentation format. For TypeScript implementation patterns, see `.claude/skills/write-api-endpoint/SKILL.md`.
 
 ## Response envelope
 

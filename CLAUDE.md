@@ -41,14 +41,14 @@ TypeScript monorepo: Node backend, React Native mobile (iOS + Android), Next.js 
 
 ## Skills
 
-- `.claude/skills/feature-workflow.md` — end-to-end PRD workflow orchestrator (competitor analysis → scope → PRD → tracking spec)
-- `.claude/skills/crypto-exchange-competitor-analysis.md` — competitor research workflow, run before writing PRDs
-- `.claude/skills/write-prd.md` — PRD document structure, format, writing style, scope discipline
-- `.claude/skills/prd-review.md` — multi-role PRD review (Product, Engineering, Design, QA leads)
-- `.claude/skills/design-api.md` — API design principles, envelope pattern, error codes, field tables (shared by PRD and code)
-- `.claude/skills/write-api-endpoint.md` — TypeScript endpoint implementation patterns
-- `.claude/skills/write-posthog-events.md` — PostHog analytics event tracking spec, run after PRD is finalized
-- `.claude/skills/write-release-note.md` — app release note generator (App Store + in-app announcement)
+- `.claude/skills/feature-workflow/` — end-to-end PRD workflow orchestrator (competitor analysis → scope → PRD → tracking spec)
+- `.claude/skills/crypto-exchange-competitor-analysis/` — competitor research workflow, run before writing PRDs
+- `.claude/skills/write-prd/` — PRD document structure, format, writing style, scope discipline
+- `.claude/skills/prd-review/` — multi-role PRD review (Product, Engineering, Design, QA leads)
+- `.claude/skills/design-api/` — API design principles, envelope pattern, error codes, field tables (shared by PRD and code)
+- `.claude/skills/write-api-endpoint/` — TypeScript endpoint implementation patterns
+- `.claude/skills/write-posthog-events/` — PostHog analytics event tracking spec, run after PRD is finalized
+- `.claude/skills/write-release-note/` — app release note generator (App Store + in-app announcement)
 
 Feature workflow: run `/feature-workflow [feature name]` for the full pipeline, or invoke individual skills manually. Run `/prd-review` standalone to review any PRD.
 

@@ -7,7 +7,7 @@ argument-hint: "[endpoint name]"
 
 # Skill: Implement API Endpoint
 
-Use this when writing or modifying API endpoint code in TypeScript. For API design principles and documentation format, see `.claude/skills/design-api.md`.
+Use this when writing or modifying API endpoint code in TypeScript. For API design principles and documentation format, see `.claude/skills/design-api/SKILL.md`.
 
 ## Handler pattern
 

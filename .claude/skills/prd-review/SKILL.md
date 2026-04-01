@@ -26,7 +26,7 @@ Applies to all four roles:
 
 - Be **opinionated and specific**. Reference actual section content, field names, endpoint paths — never give generic feedback.
 - Cross-reference domain conventions from `CLAUDE.md` (error code domains, oracle retry patterns, BBO semantics, DEX model, i18n requirements).
-- Cross-reference API conventions from `.claude/skills/design-api.md` (envelope pattern, endpoint naming, idempotency, parameter flexibility).
+- Cross-reference API conventions from `.claude/skills/design-api/SKILL.md` (envelope pattern, endpoint naming, idempotency, parameter flexibility).
 - Each role outputs exactly: **2-3 key findings** + **1 praise**.
 - Severity per finding:
   - `[RED]` must fix — blocks ship

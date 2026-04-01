@@ -19,7 +19,7 @@ Use this when drafting or editing a Product Requirements Document.
 4. **User Stories** — table format only (see below)
 5. **User Flows** — step-by-step flows for each primary user journey (see below)
 6. **Functional Requirements** — detailed behavior specs, grouped by feature area
-7. **API Specification** — see `.claude/skills/design-api.md` for format and principles
+7. **API Specification** — see `.claude/skills/design-api/SKILL.md` for format and principles
 8. **Error Handling** — error codes, user-facing messages, edge cases
 9. **Non-Functional Requirements** — performance, security, rate limits, geo-restrictions
 10. **Open Questions** — genuinely unresolved items only
@@ -71,13 +71,13 @@ Decisions go in the relevant body section, not in Open Questions. If a decision 
 
 ## Workflow
 
-1. **Competitor analysis** — run `.claude/skills/crypto-exchange-competitor-analysis.md` first, deliver report
+1. **Competitor analysis** — run `.claude/skills/crypto-exchange-competitor-analysis/SKILL.md` first, deliver report
 2. Clarify scope — use analysis findings to confirm v1 vs deferred
 3. Validate architecture — discuss key design decisions informed by competitor patterns
 4. Draft PRD — full document in structure above, reference analysis in Background & Motivation
 5. Iterate — targeted section edits, not full rewrites
 6. Deliver as `.docx` file
-7. **Tracking spec** — run `.claude/skills/write-posthog-events.md` to define analytics events for the feature
+7. **Tracking spec** — run `.claude/skills/write-posthog-events/SKILL.md` to define analytics events for the feature
 
 ## Flowchart diagrams
 
