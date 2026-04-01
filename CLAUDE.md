@@ -48,6 +48,7 @@ TypeScript monorepo: Node backend, React Native mobile (iOS + Android), Next.js 
 - `.claude/skills/design-api.md` — API design principles, envelope pattern, error codes, field tables (shared by PRD and code)
 - `.claude/skills/write-api-endpoint.md` — TypeScript endpoint implementation patterns
 - `.claude/skills/write-posthog-events.md` — PostHog analytics event tracking spec, run after PRD is finalized
+- `.claude/skills/write-release-note.md` — app release note generator (App Store + in-app announcement)
 
 Feature workflow: run `/feature-workflow [feature name]` for the full pipeline, or invoke individual skills manually. Run `/prd-review` standalone to review any PRD.
 
