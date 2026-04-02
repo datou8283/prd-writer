@@ -1,5 +1,98 @@
 # PRD Writer
 
+Claude Code skills for competitor analysis, PRDs, API design, event tracking, and release notes.
+
+## What is this
+
+This repo contains 9 Claude Code skills. Once set up, type `/` in Claude Code to see all available commands. No need to re-explain format, style, or workflow every time.
+
+The most powerful usage: run `/feature-workflow` to execute the entire PRD pipeline in one go.
+
+## Available Skills
+
+### Full Pipeline (one command)
+
+| Command | What it does |
+|---------|-------------|
+| `/feature-workflow` | End-to-end PRD pipeline: competitor analysis → scope confirmation → draft PRD → 4-role review → tracking spec |
+
+### Individual Skills
+
+| Command | What it does | When to use |
+|---------|-------------|-------------|
+| `/crypto-exchange-competitor-analysis` | Competitor analysis report | **Before** writing a PRD |
+| `/write-prd` | Write a PRD | Main skill — produces a complete PRD document |
+| `/prd-review` | 4-role PRD review | After PRD is drafted — Product/Eng/Design/QA perspectives |
+| `/design-api` | API design | When writing the API spec section in a PRD |
+| `/write-api-endpoint` | TypeScript endpoint | When engineers implement an API |
+| `/write-posthog-events` | Event tracking spec | **After** PRD is finalized |
+| `/write-release-note` | App release note | Generates both App Store and in-app announcement versions |
+| `/admin-wireframe` | Admin dashboard wireframe | When the PRD includes admin pages |
+
+### Full Workflow
+
+```
+/feature-workflow [feature name]
+```
+
+This runs the complete pipeline automatically:
+
+```
+Competitor analysis → ⏸ Confirm scope → Draft PRD → 4-role review → ⏸ Your decision → Tracking spec
+```
+
+Two human checkpoints are built in — the workflow pauses for your input before continuing.
+
+You don't have to run the full pipeline every time. Each skill works standalone too.
+
+## Setup (first time, 5 minutes)
+
+### 1. Make sure you have Claude Code
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+Run `claude` to verify it opens.
+
+### 2. Clone this repo
+
+```bash
+git clone git@github.com:datou8283/prd-writer.git
+```
+
+### 3. Open Claude Code in this folder
+
+```bash
+cd prd-writer
+claude
+```
+
+That's it.
+
+## Usage
+
+1. Open Claude Code in the `prd-writer` folder
+2. Type `/` to browse skills, or run `/feature-workflow Chase Order` directly
+3. Claude follows the standard format and workflow
+4. Chat with Claude to refine details and adjust scope
+5. Output `.docx` files are saved to the `docs/` folder
+
+### Tips
+
+- Type `/` to see all available skills — use arrow keys to select
+- To edit a specific section of a PRD, just tell Claude — no need to re-run the skill
+- Generated `.docx` files are saved in `docs/` (this folder is not pushed to GitHub)
+- The memory folder (`.claude/memory/`) syncs via git for cross-machine context
+
+## Questions?
+
+Ask Danny.
+
+---
+
+# PRD Writer（中文版）
+
 Claude Code skills — 讓 Claude 幫你寫競品分析、PRD、API 設計、埋點規劃、release note。
 
 ## 這是什麼
