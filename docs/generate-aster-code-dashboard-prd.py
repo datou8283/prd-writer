@@ -106,14 +106,13 @@ in_scope = [
     "Aster Code Stats table: sortable by all columns (Code, Address, Volume, Fees, Trade Count 30D, Total Users), paginated (10 per page)",
     "Copy-to-clipboard for wallet addresses in the stats table",
     "Dark theme UI consistent with Aster Exchange design system",
-    "Responsive layout for desktop browsers (mobile-responsive is v2)",
+    "Responsive layout for desktop and mobile H5 browsers (breakpoints: desktop >= 1280px, tablet 768-1279px, mobile < 768px)",
     "Data pipeline: daily aggregation job that computes all dashboard metrics from on-chain / trading data",
 ]
 add_bullets(in_scope)
 
 doc.add_heading("Out of Scope (v2+)", level=2)
 out_scope = [
-    ("Mobile-responsive layout", "v1 targets desktop; v2 adds mobile breakpoints and potential React Native integration"),
     ("Individual Aster Code detail page", "v1 shows aggregate dashboard only; v2 adds drill-down page per code with historical performance"),
     ("Real-time streaming updates", "v1 uses daily batch data; v2 adds WebSocket streaming for near-real-time metrics"),
     ("Custom date range picker", "v1 supports preset ranges (W/M/Q); v2 adds custom start/end date selection"),
@@ -266,8 +265,23 @@ add_bullets([
     "Table must handle large datasets (potentially hundreds of codes) with server-side pagination.",
 ])
 
-# 6.6 Data Pipeline
-doc.add_heading("6.6 Data Pipeline", level=2)
+# 6.6 Mobile H5 Responsive Layout
+doc.add_heading("6.6 Mobile H5 Responsive Layout", level=2)
+add_bullets([
+    "The dashboard must be fully functional on mobile H5 browsers (Safari, Chrome mobile) with responsive breakpoints: desktop >= 1280px, tablet 768-1279px, mobile < 768px.",
+    "KPI cards: stack vertically on mobile (1 column), side-by-side on tablet (3 columns).",
+    "Chart grid: switch from 2-column to 1-column layout on mobile. Charts must maintain minimum height of 280px on mobile for readability.",
+    "Time range and chart type toggles: remain accessible on mobile. Use compact toggle buttons (not dropdowns).",
+    "Chart legends: collapsible on mobile to save vertical space. Default collapsed, tap to expand.",
+    "Pie chart: reduce label density on mobile; show top 5 segments with labels, rest grouped as 'Others'.",
+    "Stats table: horizontally scrollable on mobile. Code name and Volume columns remain sticky (fixed left) during horizontal scroll.",
+    "Table pagination: use simplified pagination on mobile (previous / next only, no page numbers).",
+    "Copy address button: increase tap target to minimum 44x44dp on mobile for accessibility.",
+    "Touch interactions: support swipe gestures for chart scrolling on mobile. Disable hover-dependent interactions (tooltips trigger on tap instead).",
+])
+
+# 6.7 Data Pipeline
+doc.add_heading("6.7 Data Pipeline", level=2)
 add_bullets([
     "A daily aggregation job must run to compute all dashboard metrics from on-chain trading data.",
     "Aggregation must compute: per-code daily volume, fees, trade count, new users, and cumulative totals.",
@@ -515,7 +529,7 @@ nfr_data = [
     ["SEO", "Dashboard page must be server-side rendered (SSR) or statically generated (SSG) for search engine indexing. Page title, description, and Open Graph meta tags must be set."],
     ["Accessibility", "Charts must have aria-labels describing their content. Table must be navigable via keyboard. Color-blind-friendly palette for chart series."],
     ["Security", "All API endpoints are public (no auth required). Rate limit: 60 requests/minute per IP to prevent abuse. No PII exposed (wallet addresses are public on-chain data)."],
-    ["Browser support", "Chrome, Firefox, Safari, Edge (latest 2 versions). Mobile browser support deferred to v2."],
+    ["Browser support", "Desktop: Chrome, Firefox, Safari, Edge (latest 2 versions). Mobile H5: Safari iOS, Chrome Android (latest 2 versions). Minimum viewport width: 320px (iPhone SE)."],
     ["Chart library", "Use a production-grade charting library (e.g., Recharts, Apache ECharts, or Highcharts) that supports all required chart types, legend interaction, and responsive sizing."],
 ]
 add_table(["Dimension", "Requirement"], nfr_data)
