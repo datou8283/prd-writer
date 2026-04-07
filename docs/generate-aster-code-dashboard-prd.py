@@ -98,6 +98,7 @@ in_scope = [
     "Public dashboard page accessible without authentication at /aster-codes (or equivalent route)",
     "KPI summary cards: Total Aster Code Fees, Total Aster Code Volume, Total Aster Code Users",
     "6 time-series charts: Aster Code Volume (overall), Volume proportion, Volume by code, Fees by code, Cumulative users by code, User proportion",
+    "2 code ranking bar charts: Volume by Code (descending bars + cumulative line), Fees by Code (descending bars + cumulative line)",
     "3 analysis charts: Average fees per user by code, Aster Code pie chart (switchable: fees/volume/trades/users), New users by code (bar ranking)",
     "All charts support time range switching (W / M / Q) and chart type toggling (line / bar / area where applicable)",
     "Legend-based code filtering: click code name to show/hide, 'Deselect all' button",
